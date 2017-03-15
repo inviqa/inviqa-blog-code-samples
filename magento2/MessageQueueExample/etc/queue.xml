@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/queue.xsd">
+    <broker topic="orange" type="amqp" exchange="magento">
+        <queue consumer="consumerOne" name="queueOne" handler="Inviqa\MessageQueueExample\Model\Subscriber::processMessage" consumerInstance="Magento\Framework\MessageQueue\Consumer"/>
+    </broker>
+    <broker topic="green" type="amqp" exchange="magento">
+        <queue consumer="consumerTwo" name="queueTwo" handler="Inviqa\MessageQueueExample\Model\Subscriber::processMessage" consumerInstance="Magento\Framework\MessageQueue\Consumer"/>
+    </broker>
+</config>

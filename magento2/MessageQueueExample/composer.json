@@ -1,0 +1,13 @@
+{
+  "name": "inviqa/messagequeueexample",
+  "description": "Message queue example",
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Inviqa\\MessageQueueExample\\": ""
+    }
+  }
+}
